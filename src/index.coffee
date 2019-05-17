@@ -5,7 +5,7 @@ RateLimiter = require('limiter').RateLimiter
 # promisify for better control flow
 # limit # of concurrent requests to 1 in 1/2 sec to not hammer GA server
 gaRateLimiter = Promise.promisifyAll new RateLimiter 1, 500
-gp12 = Promise.promisify require 'google-p12-pem'
+gp12 = require 'google-p12-pem'
 gApi = require "googleapis"
 
 # ==========
