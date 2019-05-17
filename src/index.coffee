@@ -32,7 +32,7 @@ class GaExtractor
     # convert .p12 key to .pem
     _convertKey = new Promise (_resolve) =>
       if @config.keyPath
-        _resolve gp12 @config.keyPath
+        _resolve gp12.getPem @config.keyPath
       else
         _resolve @config.keyContent
 
