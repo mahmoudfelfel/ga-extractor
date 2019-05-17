@@ -34,7 +34,7 @@
   "homepage": "https://github.com/rayshan/ga-extractor",
   "dependencies": {
     "bluebird": "~2.9",
-    "google-p12-pem": "0.0.1",
+    "google-p12-pem": "2.0.0",
     "googleapis": "~1.1",
     "limiter": "~1.0.5"
   },
